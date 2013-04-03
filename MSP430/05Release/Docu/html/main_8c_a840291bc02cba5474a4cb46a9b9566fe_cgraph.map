@@ -1,0 +1,19 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$_buffer___circ_8c.html#a9fed58b21e5cd898b476c7b1c8e7b0a1" title="Defiler" alt="" coords="180,5,239,32"/>
+<area shape="rect" id="node3" href="$_h_a_l_8c.html#aa882093f2febe68145bdd5b319860ab1" title="EnableReceiveDataRF" alt="" coords="134,56,285,83"/>
+<area shape="rect" id="node4" href="$_buffer___circ_8c.html#aa153211ed48c10127787dbb881cdeab7" title="FileVide" alt="" coords="175,107,244,133"/>
+<area shape="rect" id="node5" href="$_flash_8c.html#a8979b28f09ff1a313d57dbdbd3d6b130" title="HAL write functions API." alt="" coords="131,157,287,184"/>
+<area shape="rect" id="node6" href="$_h_a_l_8c.html#a294659462b4a933323d7714b587a5640" title="GetGPSFIX" alt="" coords="165,208,254,235"/>
+<area shape="rect" id="node7" href="$_h_a_l_8c.html#a9a407078cf92ce788bd9f5b4d4dab899" title="getRTCTime" alt="" coords="163,259,256,285"/>
+<area shape="rect" id="node8" href="$_h_a_l_8c.html#aa1c6274832267c44cca54a36193d7a32" title="Init_HAL" alt="" coords="174,309,245,336"/>
+<area shape="rect" id="node9" href="$_buffer___circ_8c.html#ad8b440a4c7d06bbe583b4aac19e670e0" title="InitBC" alt="" coords="181,360,238,387"/>
+<area shape="rect" id="node10" href="$_flash_8c.html#ab6de9b003046a9be4850a85f67a2dcf6" title="InitPage" alt="" coords="175,411,244,437"/>
+<area shape="rect" id="node11" href="$_flash_8c.html#ad01fd36c8eb6085afb069592d21a325e" title="RechercheDernierePageStockee" alt="" coords="104,461,315,488"/>
+<area shape="rect" id="node13" href="$_h_a_l_8c.html#ab9ff3bbb0322d2581d8a60420136ca26" title="SleepGPS" alt="" coords="168,512,251,539"/>
+<area shape="rect" id="node14" href="$_h_a_l_8c.html#a54cfb1be5f18e65469cc78d6e8278088" title="SleepRF" alt="" coords="173,563,245,589"/>
+<area shape="rect" id="node15" href="$_h_a_l_8c.html#a95cad6039025111ca0f30ff61d79e766" title="WakeGPS" alt="" coords="167,613,251,640"/>
+<area shape="rect" id="node16" href="$_h_a_l_8c.html#a83942615aa2111ffac2d4cfab239d004" title="Activate the Watchdog." alt="" coords="159,664,260,691"/>
+<area shape="rect" id="node17" href="$_h_a_l_8c.html#a131115b83df05a409ed1ee91e83bc571" title="Activate Countdown Timer for." alt="" coords="160,715,259,741"/>
+<area shape="rect" id="node18" href="$_h_a_l_8c.html#aa52680d90388e69fbd67da262463765f" title="Initialize the timer." alt="" coords="170,765,249,792"/>
+<area shape="rect" id="node12" href="$_flash_8c.html#a6473d8c744066eb11f08fb66e9d89396" title="HAL INIT SPI function." alt="" coords="363,461,514,488"/>
+</map>

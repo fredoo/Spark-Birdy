@@ -1,0 +1,66 @@
+var _t_y_p_e_d_e_f_8h =
+[
+    [ "DataRegister", "struct_data_register.html", "struct_data_register" ],
+    [ "Calendar", "struct_calendar.html", "struct_calendar" ],
+    [ "PeriodeGPS", "struct_periode_g_p_s.html", "struct_periode_g_p_s" ],
+    [ "FenetreRF", "struct_fenetre_r_f.html", "struct_fenetre_r_f" ],
+    [ "ConfLoggeur", "struct_conf_loggeur.html", "struct_conf_loggeur" ],
+    [ "PAGE", "struct_p_a_g_e.html", "struct_p_a_g_e" ],
+    [ "ACK", "_t_y_p_e_d_e_f_8h.html#a6f6489887e08bff4887d0bc5dcf214d8", null ],
+    [ "AcquisitionGPS", "_t_y_p_e_d_e_f_8h.html#a2d98c32e5a5bfc6530d7f1e29d82fdfa", null ],
+    [ "CommunicationRF", "_t_y_p_e_d_e_f_8h.html#a3bca194b0730de0d560a885294a36aba", null ],
+    [ "CreateFrame", "_t_y_p_e_d_e_f_8h.html#adaac3fcb2daf4d80b5455bc28c7d6808", null ],
+    [ "EOT", "_t_y_p_e_d_e_f_8h.html#aa3210a5256085e136fed7897ae93a756", null ],
+    [ "FALSE", "_t_y_p_e_d_e_f_8h.html#aa93f0eb578d23995850d61f7d61c55c1", null ],
+    [ "GetFix", "_t_y_p_e_d_e_f_8h.html#aadc600a38b7bb8fe78ee63dc95115cb4", null ],
+    [ "InitForFix", "_t_y_p_e_d_e_f_8h.html#a1d85117ebbd60dcdc119f9de5cdbfa03", null ],
+    [ "LIGNESBUFFER", "_t_y_p_e_d_e_f_8h.html#aac40043b259b75df97756ae46e3a9ad0", null ],
+    [ "LONGUEURBUFFERLINE", "_t_y_p_e_d_e_f_8h.html#afcfaef4b3e1be3a30a4b18be0716021b", null ],
+    [ "NACK", "_t_y_p_e_d_e_f_8h.html#a958518a45b12053ae33606ee7cb68a55", null ],
+    [ "PAGESIZE", "_t_y_p_e_d_e_f_8h.html#a519adc2af3ba06a8f0548b6690050a89", null ],
+    [ "ReadConfig", "_t_y_p_e_d_e_f_8h.html#abdd5af69b1385602bc13b8dd21a9be1f", null ],
+    [ "ReadEcho", "_t_y_p_e_d_e_f_8h.html#ae1b5b4b97fa9743050fd4c8afc4753aa", null ],
+    [ "RFBUFFER", "_t_y_p_e_d_e_f_8h.html#ab8fe40b49f97bb1e15a9983841a39d13", null ],
+    [ "SendData", "_t_y_p_e_d_e_f_8h.html#a7ace55559873ad2045e0f22e25b60233", null ],
+    [ "STX", "_t_y_p_e_d_e_f_8h.html#aacd744a917e61146ec8b7175b4761683", null ],
+    [ "SwitchWait", "_t_y_p_e_d_e_f_8h.html#a8b8cbaac26f6959ce239bf7d06329f3d", null ],
+    [ "TOOWEAK", "_t_y_p_e_d_e_f_8h.html#a6ab40ae89459b60df754afce079f2eae", null ],
+    [ "TRAMEZIPSIZE", "_t_y_p_e_d_e_f_8h.html#a8ff8ada3f5fa5e6244d7ac5e80584d05", null ],
+    [ "TRUE", "_t_y_p_e_d_e_f_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d", null ],
+    [ "UPDATE", "_t_y_p_e_d_e_f_8h.html#ac2558c32fa879d85fe59f8c5f8dfbc04", null ],
+    [ "WaitDataCRC", "_t_y_p_e_d_e_f_8h.html#aabf313ae0d795b510328129f8bc7ba46", null ],
+    [ "WhatElse", "_t_y_p_e_d_e_f_8h.html#aad6a8597e22a752b8fd39d48fbaa9ca7", null ],
+    [ "ADDRESS", "_t_y_p_e_d_e_f_8h.html#a02dd2468c29798e85c2518f6f9036239", null ],
+    [ "BOOL", "_t_y_p_e_d_e_f_8h.html#a67bb6a3d7ee6a2a5950ce437abbe31c8", null ],
+    [ "BYTE", "_t_y_p_e_d_e_f_8h.html#a4ae1dab0fb4b072a66584546209e7d58", null ],
+    [ "DWORD", "_t_y_p_e_d_e_f_8h.html#ad342ac907eb044443153a22f964bf0af", null ],
+    [ "LLD_UINT16", "_t_y_p_e_d_e_f_8h.html#ac9ce92f7048915d805827c01be354098", null ],
+    [ "LLD_UINT32", "_t_y_p_e_d_e_f_8h.html#a1a12d8024c3b6042e242d369f93b1f66", null ],
+    [ "SBYTE", "_t_y_p_e_d_e_f_8h.html#ad8da5206821b41708d8949a883bb016c", null ],
+    [ "TRAME", "_t_y_p_e_d_e_f_8h.html#a9878ad6b7957692df18faecc51bd1be2", null ],
+    [ "WORD", "_t_y_p_e_d_e_f_8h.html#a197942eefa7db30960ae396d68339b97", null ],
+    [ "GGA", "_t_y_p_e_d_e_f_8h.html#a0ffae957ebd15972822a7132db0b07d2", [
+      [ "FixStatus", "_t_y_p_e_d_e_f_8h.html#a0ffae957ebd15972822a7132db0b07d2a420cce1efef5c322e6970d23381c443a", null ],
+      [ "NBRSat", "_t_y_p_e_d_e_f_8h.html#a0ffae957ebd15972822a7132db0b07d2ac8a30da326c2ec0aca1ccfb80d961ebb", null ],
+      [ "MSLALT", "_t_y_p_e_d_e_f_8h.html#a0ffae957ebd15972822a7132db0b07d2acbcdcc6a956f5e10519fe3990296f9fb", null ],
+      [ "GEOIDALESEP", "_t_y_p_e_d_e_f_8h.html#a0ffae957ebd15972822a7132db0b07d2ad748827156b6069764aeb6a28be314e8", null ]
+    ] ],
+    [ "GSA", "_t_y_p_e_d_e_f_8h.html#ab6ff75b5b1da532494b1aeff7ef6b3f4", [
+      [ "PDOP", "_t_y_p_e_d_e_f_8h.html#ab6ff75b5b1da532494b1aeff7ef6b3f4aaa74073bb383e5e9f65449619d7fb828", null ],
+      [ "HDOP", "_t_y_p_e_d_e_f_8h.html#ab6ff75b5b1da532494b1aeff7ef6b3f4ab20c502ec8c61a53c05eac049bc2c333", null ],
+      [ "VDOP", "_t_y_p_e_d_e_f_8h.html#ab6ff75b5b1da532494b1aeff7ef6b3f4af5e3f6c6dfaf7cb0e8862ddb9e812e7a", null ]
+    ] ],
+    [ "RMC", "_t_y_p_e_d_e_f_8h.html#ada2a4d7b05d8cb068dc620c7f2648b9d", [
+      [ "TIME", "_t_y_p_e_d_e_f_8h.html#ada2a4d7b05d8cb068dc620c7f2648b9dae9e4c627760f36823cdd153c24229157", null ],
+      [ "Validity", "_t_y_p_e_d_e_f_8h.html#ada2a4d7b05d8cb068dc620c7f2648b9da022afb8b175c0b3d4c059254f97892f2", null ],
+      [ "Latitude", "_t_y_p_e_d_e_f_8h.html#ada2a4d7b05d8cb068dc620c7f2648b9da097b5f1486e03692ce68c540c48102ce", null ],
+      [ "NS", "_t_y_p_e_d_e_f_8h.html#ada2a4d7b05d8cb068dc620c7f2648b9da1904356e8ec34146e03f386bcb0da805", null ],
+      [ "Longitude", "_t_y_p_e_d_e_f_8h.html#ada2a4d7b05d8cb068dc620c7f2648b9da65e52b3d8a1c6d8a77b30a6407980944", null ],
+      [ "EW", "_t_y_p_e_d_e_f_8h.html#ada2a4d7b05d8cb068dc620c7f2648b9da59796c3ed9a8f343966f54cb237e17ff", null ],
+      [ "DATE", "_t_y_p_e_d_e_f_8h.html#ada2a4d7b05d8cb068dc620c7f2648b9da0ace72efd9e987dfd807365d0ca50141", null ]
+    ] ],
+    [ "VTG", "_t_y_p_e_d_e_f_8h.html#a33bd461104818b654ff9d02fb03983d1", [
+      [ "Azimuth", "_t_y_p_e_d_e_f_8h.html#a33bd461104818b654ff9d02fb03983d1af9f9110b2e299e6c0dff97ba5c418be0", null ],
+      [ "Vitesse", "_t_y_p_e_d_e_f_8h.html#a33bd461104818b654ff9d02fb03983d1ad62f25c77c9665371fc3fae824f8fc07", null ]
+    ] ]
+];
