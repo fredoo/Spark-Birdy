@@ -13,6 +13,7 @@ main.obj: ../HAL/FLash.h
 main.obj: ../HAl/HAL.h
 main.obj: ../HAl/GPS.h
 main.obj: ../HAL/Var_FRAM.h
+main.obj: ../HAL/Interrupt_Vectors.h
 
 ../main.c: 
 ../main.h: 
@@ -27,3 +28,4 @@ C:/ti/ccsv5/tools/compiler/msp430_4.1.5/include/stdint.h:
 ../HAl/HAL.h: 
 ../HAl/GPS.h: 
 ../HAL/Var_FRAM.h: 
+../HAL/Interrupt_Vectors.h: 

@@ -1,0 +1,7 @@
+<map id="Init_HAL" name="Init_HAL">
+<area shape="rect" id="node2" href="$_flash_8c.html#adacfe8b2b33af23187c252f150d6648d" title="Init_SPI" alt="" coords="151,5,217,32"/>
+<area shape="rect" id="node3" href="$_h_a_l_8c.html#a8eb857ab2d99a9b7b948962f9a6ee31b" title="InitClockSystem" alt="" coords="125,56,243,83"/>
+<area shape="rect" id="node4" href="$_h_a_l_8c.html#aa0aea3e1b932311d209d79482f289949" title="InitIO" alt="" coords="158,107,210,133"/>
+<area shape="rect" id="node5" href="$_h_a_l_8c.html#aed4dc6913a99c427baae854187db8a53" title="InitUARTGPS" alt="" coords="133,157,235,184"/>
+<area shape="rect" id="node6" href="$_h_a_l_8c.html#af865dc08bf113dd8305127db4c48c367" title="InitUARTRF" alt="" coords="139,208,229,235"/>
+</map>

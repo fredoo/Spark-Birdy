@@ -134,13 +134,13 @@ $(document).ready(function(){initNavTree('_h_a_l_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#a8ae343f7840a178aaf4f12d73e7165c3">TransmitDataRF</a>(<span class="keywordtype">char</span>*);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#a54cfb1be5f18e65469cc78d6e8278088">SleepRF</a>();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#a0fe0df7ee39fa30cd98fa12eccad50cb">ConfigModeRF</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#ad7a08671e434b6f79ad81df5ca069e95">TransmitChar</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#a80cb21b61d142961a0af2bf5f19c9999">SendCharRF</a>(<span class="keywordtype">char</span> c);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#a131115b83df05a409ed1ee91e83bc571" title="Activate Countdown Timer for.">WDT_Enable</a>();      </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#a83942615aa2111ffac2d4cfab239d004" title="Activate the Watchdog.">WDT_Disable</a>();     </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#ab4f9c182772d6d0814d5c7fe608c1e1d" title="Remove the Watchdog.">WDT_Init</a>();        </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="_t_y_p_e_d_e_f_8h.html#a67bb6a3d7ee6a2a5950ce437abbe31c8">BOOL</a> <a class="code" href="_h_a_l_8c.html#aa52680d90388e69fbd67da262463765f" title="Initialize the timer.">WDT_FIN</a>();         </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="_t_y_p_e_d_e_f_8h.html#a67bb6a3d7ee6a2a5950ce437abbe31c8">BOOL</a> <a class="code" href="_h_a_l_8c.html#aa52680d90388e69fbd67da262463765f" title="Check if program aborted due to Watchdog.">WDT_FIN</a>();         </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_a_l_8c.html#aa82d99257de7ffbc696691c507efd53a" title="Check if program aborted due to Watchdog.">SleepFor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Seconds);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="_h_a_l_8h.html#a273992423c0f3f98fa5c684b5a4c4175">   49</a></span>&#160;<span class="preprocessor">#define OFS_CSCTL0             (0x0000)       </span><span class="comment">/* CS Control Register 0 */</span><span class="preprocessor"></span></div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('_h_a_l_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c5b59151d6c1325e022e4ba605eb40f8.html">HAL</a></li><li class="navelem"><a class="el" href="_h_a_l_8h.html">HAL.h</a></li>
-    <li class="footer">Generated on Thu Apr 4 2013 00:46:47 for My Project by
+    <li class="footer">Generated on Thu Apr 4 2013 12:54:32 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

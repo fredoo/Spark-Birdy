@@ -19,7 +19,7 @@ BYTE Acquisition_OK;
 BYTE CompteurAcquisitionGPS;
 BYTE iCpt;
 BYTE Reveil_Urgent;
-
+BOOL WDT_STATUS;
 
 int main(void)
 {

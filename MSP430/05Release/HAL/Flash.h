@@ -33,7 +33,7 @@
 
 
 /*! public function prototypes */
-void INIT_SPI();							//! HAL INIT SPI function
+void Init_SPI();							//! HAL INIT SPI function
 
 
 //! HAL read functions API

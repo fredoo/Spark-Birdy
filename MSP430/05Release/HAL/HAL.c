@@ -5,10 +5,10 @@
 #include "TYPEDEF.h"
 #include <msp430fr5739.h>	// Necessary for the usages of register names
 #include "HAL.h"
-
+#include "Flash.h"
 extern char*    pRFTXTrame,pGPSTXTrame;	// Pointeur vers la trame à envoyer
 extern char     RFTXTrameLen ;		// Taille de la trame à envoyer
-
+extern BOOL WDT_STATUS;
 //TO DO
 //void InitSPIMem();
 //void InitADC(); // Tension Batterie
@@ -17,7 +17,11 @@ extern char     RFTXTrameLen ;		// Taille de la trame à envoyer
 
 void Init_HAL()
 {
-
+	InitIO();
+	InitClockSystem();
+	InitUARTRF();
+	InitUARTGPS();
+	Init_SPI();
 }
 
 /*!_______________________________ Basic MSP430FR5739 Init. Functions */
@@ -223,10 +227,13 @@ void EnableReceiveDataRF()
     __enable_interrupt();
     }
 
-void TransmitChar(char c)
-    {
-		UCA1TXBUF = c;
-    }
+void SendCharRF(char c)
+{
+	P3OUT |= BIT4;		// Set RF_CFG HIGH for communication
+	P3OUT &= ~BIT5;		// Set RF_EN LOW for normal mode for data transceiver
+	_no_operation();
+	UCA1TXBUF = c;
+}
 
 void TransmitDataRF(char* p)
     {
@@ -393,9 +400,9 @@ void WDT_Init()
 	TB0CCTL0 = CCIE;                          				// TBCCR0 interrupt enabled
 	//! Initialize the timer
 }
-BOOL WDT_FIN()
+BOOL WDT_FIN()//! Check if program aborted due to Watchdog
 {
-	//! Check if program aborted due to Watchdog
+	return WDT_STATUS;
 }
 void SleepFor(unsigned int Seconds)
 {

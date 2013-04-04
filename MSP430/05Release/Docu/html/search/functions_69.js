@@ -1,7 +1,7 @@
 var searchData=
 [
   ['init_5fhal',['Init_HAL',['../_h_a_l_8c.html#aa1c6274832267c44cca54a36193d7a32',1,'Init_HAL():&#160;HAL.c'],['../_h_a_l_8h.html#aa1c6274832267c44cca54a36193d7a32',1,'Init_HAL():&#160;HAL.c']]],
-  ['init_5fspi',['INIT_SPI',['../_flash_8c.html#af746ad6c0736faf68a4a987a9362126a',1,'INIT_SPI():&#160;Flash.c'],['../_flash_8h.html#af746ad6c0736faf68a4a987a9362126a',1,'INIT_SPI():&#160;Flash.c']]],
+  ['init_5fspi',['Init_SPI',['../_flash_8c.html#adacfe8b2b33af23187c252f150d6648d',1,'Init_SPI():&#160;Flash.c'],['../_flash_8h.html#adacfe8b2b33af23187c252f150d6648d',1,'Init_SPI():&#160;Flash.c']]],
   ['initadc',['InitADC',['../_h_a_l_8h.html#aebf00c4b26377bca91c8702ced5e7927',1,'HAL.h']]],
   ['initbc',['InitBC',['../_buffer___circ_8c.html#ad8b440a4c7d06bbe583b4aac19e670e0',1,'InitBC(BC *bc):&#160;Buffer_Circ.c'],['../_buffer___circ_8h.html#ad8b440a4c7d06bbe583b4aac19e670e0',1,'InitBC(BC *bc):&#160;Buffer_Circ.c']]],
   ['initclocksystem',['InitClockSystem',['../_h_a_l_8c.html#a8eb857ab2d99a9b7b948962f9a6ee31b',1,'InitClockSystem():&#160;HAL.c'],['../_h_a_l_8h.html#af46e5a9e97660f66ab73f594d08eff4b',1,'InitClockSystem():&#160;HAL.c']]],

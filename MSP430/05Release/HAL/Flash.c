@@ -62,7 +62,7 @@
  * INIT_SPI - HAL INIT SPI function
  *
  ***************************************************************************/
-void INIT_SPI()
+void Init_SPI()
 {
 	P1SEL1 |= BIT3 + BIT6 + BIT7;	//!Select eUSCI Pin Function
 	P2SEL1 |= BIT2;					//!Select eUSCI Pin Function

@@ -1,10 +1,10 @@
 ******************************************************************************
                   MSP430 Linker PC v4.1.5                      
 ******************************************************************************
->> Linked Thu Apr 04 01:25:40 2013
+>> Linked Thu Apr 04 12:49:00 2013
 
 OUTPUT FILE NAME:   <05Release.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 0000c94c
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000cae0
 
 
 MEMORY CONFIGURATION
@@ -16,8 +16,8 @@ MEMORY CONFIGURATION
   PERIPHERALS_16BIT     00000100   00000100  00000000  00000100  RWIX
   INFOB                 00001800   00000080  00000000  00000080  RWIX
   INFOA                 00001880   00000080  00000000  00000080  RWIX
-  RAM                   00001c00   00000400  000000b3  0000034d  RWIX
-  FRAM                  0000c200   00001e00  0000080c  000015f4  RWIX
+  RAM                   00001c00   00000400  000000b4  0000034c  RWIX
+  FRAM                  0000c200   00001e00  000009d0  00001430  RWIX
   FRAM_DATA             0000e000   00001f80  000006ca  000018b6  RWIX
   SIGNATURE             0000ff88   00000008  00000000  00000008  RWIX
   INT00                 0000ff90   00000002  00000000  00000002  RWIX
@@ -51,7 +51,7 @@ MEMORY CONFIGURATION
   INT28                 0000ffc8   00000002  00000000  00000002  RWIX
   INT29                 0000ffca   00000002  00000000  00000002  RWIX
   INT30                 0000ffcc   00000002  00000000  00000002  RWIX
-  INT31                 0000ffce   00000002  00000000  00000002  RWIX
+  INT31                 0000ffce   00000002  00000002  00000000  RWIX
   INT32                 0000ffd0   00000002  00000000  00000002  RWIX
   INT33                 0000ffd2   00000002  00000000  00000002  RWIX
   INT34                 0000ffd4   00000002  00000000  00000002  RWIX
@@ -61,14 +61,14 @@ MEMORY CONFIGURATION
   INT38                 0000ffdc   00000002  00000000  00000002  RWIX
   INT39                 0000ffde   00000002  00000000  00000002  RWIX
   INT40                 0000ffe0   00000002  00000000  00000002  RWIX
-  INT41                 0000ffe2   00000002  00000000  00000002  RWIX
+  INT41                 0000ffe2   00000002  00000002  00000000  RWIX
   INT42                 0000ffe4   00000002  00000000  00000002  RWIX
-  INT43                 0000ffe6   00000002  00000000  00000002  RWIX
+  INT43                 0000ffe6   00000002  00000002  00000000  RWIX
   INT44                 0000ffe8   00000002  00000000  00000002  RWIX
-  INT45                 0000ffea   00000002  00000000  00000002  RWIX
-  INT46                 0000ffec   00000002  00000000  00000002  RWIX
-  INT47                 0000ffee   00000002  00000000  00000002  RWIX
-  INT48                 0000fff0   00000002  00000000  00000002  RWIX
+  INT45                 0000ffea   00000002  00000002  00000000  RWIX
+  INT46                 0000ffec   00000002  00000002  00000000  RWIX
+  INT47                 0000ffee   00000002  00000002  00000000  RWIX
+  INT48                 0000fff0   00000002  00000002  00000000  RWIX
   INT49                 0000fff2   00000002  00000000  00000002  RWIX
   INT50                 0000fff4   00000002  00000000  00000002  RWIX
   INT51                 0000fff6   00000002  00000000  00000002  RWIX
@@ -83,8 +83,8 @@ SECTION ALLOCATION MAP
  output                                  attributes/
 section   page    origin      length       input sections
 --------  ----  ----------  ----------   ----------------
-.bss       0    00001c00    00000013     UNINITIALIZED
-                  00001c00    00000013     main.obj (.bss)
+.bss       0    00001c00    00000014     UNINITIALIZED
+                  00001c00    00000014     main.obj (.bss)
 
 .TI.noinit 
 *          0    00001c00    00000000     UNINITIALIZED
@@ -116,38 +116,73 @@ section   page    origin      length       input sections
 
 .const     0    0000c220    00000000     UNINITIALIZED
 
-.text      0    0000c400    0000060c     
+.text      0    0000c400    000007d0     
                   0000c400    00000164     main.obj (.text:main)
                   0000c564    00000122     Flash.obj (.text:FLASH_WRITE_PAGE)
                   0000c686    000000d0     Flash.obj (.text:FLASH_READ_PAGE)
                   0000c756    0000006e     rts430x_lc_sd_eabi.lib : autoinit.obj (.text:_auto_init)
-                  0000c7c4    00000042     HAL.obj (.text:getRTCTime)
-                  0000c806    0000003e     rts430x_lc_sd_eabi.lib : lsl32.obj (.text:l_lsl_const)
-                  0000c844    0000003e                            : lsr32.obj (.text:l_lsr_const)
-                  0000c882    00000038                            : copy_zero_init.obj (.text:decompress:ZI:__TI_zero_init)
-                  0000c8ba    00000032     Flash.obj (.text:RechercheDernierePageStockee)
-                  0000c8ec    00000026     Buffer_Circ.obj (.text:Defiler)
-                  0000c912    00000020     Flash.obj (.text:InitPage)
-                  0000c932    0000001a     HAL.obj (.text:WDT_Enable)
-                  0000c94c    0000001a     rts430x_lc_sd_eabi.lib : boot.obj (.text:_isr:_c_int00_noexit)
-                  0000c966    00000018     Buffer_Circ.obj (.text:FileVide)
-                  0000c97e    00000016     HAL.obj (.text:EnableReceiveDataRF)
-                  0000c994    00000016     Buffer_Circ.obj (.text:InitBC)
-                  0000c9aa    00000016     rts430x_lc_sd_eabi.lib : mult16_f5hw.obj (.text)
-                  0000c9c0    00000014     HAL.obj (.text:SleepGPS)
-                  0000c9d4    00000012     rts430x_lc_sd_eabi.lib : memcpy.obj (.text:memcpy)
-                  0000c9e6    0000000e     HAL.obj (.text:SleepRF)
-                  0000c9f4    00000008     HAL.obj (.text:WakeGPS)
-                  0000c9fc    00000004     rts430x_lc_sd_eabi.lib : pre_init.obj (.text:_system_pre_init)
-                  0000ca00    00000004                            : exit.obj (.text:abort)
-                  0000ca04    00000002     HAL.obj (.text:GetGPSFIX)
-                  0000ca06    00000002     HAL.obj (.text:Init_HAL)
-                  0000ca08    00000002     HAL.obj (.text:WDT_Disable)
-                  0000ca0a    00000002     HAL.obj (.text:WDT_FIN)
+                  0000c7c4    00000060     HAL.obj (.text:InitIO)
+                  0000c824    00000042     HAL.obj (.text:getRTCTime)
+                  0000c866    0000003e     rts430x_lc_sd_eabi.lib : lsl32.obj (.text:l_lsl_const)
+                  0000c8a4    0000003e                            : lsr32.obj (.text:l_lsr_const)
+                  0000c8e2    00000038     Flash.obj (.text:Init_SPI)
+                  0000c91a    00000038     rts430x_lc_sd_eabi.lib : copy_zero_init.obj (.text:decompress:ZI:__TI_zero_init)
+                  0000c952    00000032     Flash.obj (.text:RechercheDernierePageStockee)
+                  0000c984    00000028     HAL.obj (.text:InitUARTGPS)
+                  0000c9ac    00000028     HAL.obj (.text:InitUARTRF)
+                  0000c9d4    00000028     main.obj (.text:_isr:ADC10_ISR)
+                  0000c9fc    00000028     main.obj (.text:_isr:RTC_B_ISR)
+                  0000ca24    00000026     Buffer_Circ.obj (.text:Defiler)
+                  0000ca4a    00000024     HAL.obj (.text:InitClockSystem)
+                  0000ca6e    00000020     Flash.obj (.text:InitPage)
+                  0000ca8e    0000001c     main.obj (.text:_isr:USCI_A0_ISR_HOOK)
+                  0000caaa    0000001c     main.obj (.text:_isr:USCI_A1_ISR_HOOK)
+                  0000cac6    0000001a     HAL.obj (.text:WDT_Enable)
+                  0000cae0    0000001a     rts430x_lc_sd_eabi.lib : boot.obj (.text:_isr:_c_int00_noexit)
+                  0000cafa    00000018     Buffer_Circ.obj (.text:FileVide)
+                  0000cb12    00000016     HAL.obj (.text:EnableReceiveDataRF)
+                  0000cb28    00000016     Buffer_Circ.obj (.text:InitBC)
+                  0000cb3e    00000016     HAL.obj (.text:Init_HAL)
+                  0000cb54    00000016     rts430x_lc_sd_eabi.lib : mult16_f5hw.obj (.text)
+                  0000cb6a    00000014     HAL.obj (.text:SleepGPS)
+                  0000cb7e    00000014     main.obj (.text:_isr:USCI_B0_ISR)
+                  0000cb92    00000012     rts430x_lc_sd_eabi.lib : memcpy.obj (.text:memcpy)
+                  0000cba4    0000000e     HAL.obj (.text:SleepRF)
+                  0000cbb2    00000008     HAL.obj (.text:WakeGPS)
+                  0000cbba    00000006     HAL.obj (.text:WDT_FIN)
+                  0000cbc0    00000004     rts430x_lc_sd_eabi.lib : pre_init.obj (.text:_system_pre_init)
+                  0000cbc4    00000004                            : exit.obj (.text:abort)
+                  0000cbc8    00000002     HAL.obj (.text:GetGPSFIX)
+                  0000cbca    00000002     HAL.obj (.text:WDT_Disable)
+                  0000cbcc    00000002     main.obj (.text:_isr:Timer0_A0_ISR)
+                  0000cbce    00000002     main.obj (.text:_isr:Timer1_A0_ISR)
 
 .fram_data 
 *          0    0000e000    000006ca     UNINITIALIZED
                   0000e000    000006ca     main.obj (.fram_data)
+
+RTC        0    0000ffce    00000002     
+                  0000ffce    00000002     main.obj (.int31)
+
+TIMER1_A0 
+*          0    0000ffe2    00000002     
+                  0000ffe2    00000002     main.obj (.int41)
+
+USCI_A1    0    0000ffe6    00000002     
+                  0000ffe6    00000002     main.obj (.int43)
+
+TIMER0_A0 
+*          0    0000ffea    00000002     
+                  0000ffea    00000002     main.obj (.int45)
+
+ADC10      0    0000ffec    00000002     
+                  0000ffec    00000002     main.obj (.int46)
+
+USCI_B0    0    0000ffee    00000002     
+                  0000ffee    00000002     main.obj (.int47)
+
+USCI_A0    0    0000fff0    00000002     
+                  0000fff0    00000002     main.obj (.int48)
 
 .reset     0    0000fffe    00000002     
                   0000fffe    00000002     rts430x_lc_sd_eabi.lib : boot.obj (.reset)
@@ -156,7 +191,7 @@ section   page    origin      length       input sections
 LINKER GENERATED COPY TABLES
 
 __TI_cinit_table @ 0000c210 records: 2, size/record: 8, table size: 16
-	.bss: load addr=0000c200, load size=00000006 bytes, run addr=00001c00, run size=00000013 bytes, compression=zero_init
+	.bss: load addr=0000c200, load size=00000006 bytes, run addr=00001c00, run size=00000014 bytes, compression=zero_init
 	.fram_data: load addr=0000c206, load size=00000006 bytes, run addr=0000e000, run size=000006ca bytes, compression=zero_init
 
 
@@ -200,12 +235,13 @@ address    name
 00000712   ADC10MEM0
 00000713   ADC10MEM0_H
 00000712   ADC10MEM0_L
+0000c9d4   ADC10_ISR
 00001c0f   Acquisition_OK
 000004be   BCD2BIN
 0000e400   BC_GPS
 0000e484   BC_RF
 000004bc   BIN2BCD
-0000ca00   C$$EXIT
+0000cbc4   C$$EXIT
 000008c0   CDCTL0
 000008c1   CDCTL0_H
 000008c0   CDCTL0_L
@@ -300,27 +336,32 @@ address    name
 0000050e   DMAIV
 0000050f   DMAIV_H
 0000050e   DMAIV_L
-0000c8ec   Defiler
+0000ca24   Defiler
 0000e6c2   DerniereHeureAcquisitionGPS
 0000e6be   DernierePageStockee
-0000c97e   EnableReceiveDataRF
+0000cb12   EnableReceiveDataRF
 00001c0e   EtatAEF
 0000c686   FLASH_READ_PAGE
 0000c564   FLASH_WRITE_PAGE
 00000140   FRCTL0
 00000141   FRCTL0_H
 00000140   FRCTL0_L
-0000c966   FileVide
+0000cafa   FileVide
 00000144   GCCTL0
 00000145   GCCTL0_H
 00000144   GCCTL0_L
 00000146   GCCTL1
 00000147   GCCTL1_H
 00000146   GCCTL1_L
-0000ca04   GetGPSFIX
-0000c994   InitBC
-0000c912   InitPage
-0000ca06   Init_HAL
+0000cbc8   GetGPSFIX
+0000cb28   InitBC
+0000ca4a   InitClockSystem
+0000c7c4   InitIO
+0000ca6e   InitPage
+0000c984   InitUARTGPS
+0000c9ac   InitUARTRF
+0000cb3e   Init_HAL
+0000c8e2   Init_SPI
 000004c4   MAC
 000004da   MAC32H
 000004db   MAC32H_H
@@ -532,7 +573,8 @@ address    name
 000004b6   RTCYEAR
 000004b7   RTCYEAR_H
 000004b6   RTCYEAR_L
-0000c8ba   RechercheDernierePageStockee
+0000c9fc   RTC_B_ISR
+0000c952   RechercheDernierePageStockee
 00001c12   Reveil_Urgent
 00000100   SFRIE1
 00000101   SFRIE1_H
@@ -579,8 +621,8 @@ address    name
 0000019a   SYSUNIV
 0000019b   SYSUNIV_H
 0000019a   SYSUNIV_L
-0000c9c0   SleepGPS
-0000c9e6   SleepRF
+0000cb6a   SleepGPS
+0000cba4   SleepRF
 00001c0d   Status
 00000352   TA0CCR0
 00000354   TA0CCR1
@@ -634,6 +676,8 @@ address    name
 00000450   TB2R
 0000e508   TRAME_NMEA
 00001c0c   TempC
+0000cbcc   Timer0_A0_ISR
+0000cbce   Timer1_A0_ISR
 00001c02   Trame_GGA
 00001c04   Trame_GSA
 00001c06   Trame_RMC
@@ -750,14 +794,18 @@ address    name
 0000064e   UCB0TXBUF
 0000064f   UCB0TXBUF_H
 0000064e   UCB0TXBUF_L
+0000ca8e   USCI_A0_ISR_HOOK
+0000caaa   USCI_A1_ISR_HOOK
+0000cb7e   USCI_B0_ISR
 00001c0b   VBat
 0000015c   WDTCTL
 0000015d   WDTCTL_H
 0000015c   WDTCTL_L
-0000ca08   WDT_Disable
-0000c932   WDT_Enable
-0000ca0a   WDT_FIN
-0000c9f4   WakeGPS
+0000cbca   WDT_Disable
+0000cac6   WDT_Enable
+0000cbba   WDT_FIN
+00001c13   WDT_STATUS
+0000cbb2   WakeGPS
 00002000   __STACK_END
 000000a0   __STACK_SIZE
 0000c210   __TI_CINIT_Base
@@ -768,55 +816,55 @@ UNDEFED    __TI_INITARRAY_Base
 UNDEFED    __TI_INITARRAY_Limit
 00000001   __TI_args_main
 00000001   __TI_exit
-0000c882   __TI_zero_init
+0000c91a   __TI_zero_init
 ffffffff   __binit__
 ffffffff   __c_args__
-0000c9aa   __mspabi_mpyi_f5hw
-0000c83e   __mspabi_slll_1
-0000c81a   __mspabi_slll_10
-0000c816   __mspabi_slll_11
-0000c812   __mspabi_slll_12
-0000c80e   __mspabi_slll_13
-0000c80a   __mspabi_slll_14
-0000c806   __mspabi_slll_15
-0000c83a   __mspabi_slll_2
-0000c836   __mspabi_slll_3
-0000c832   __mspabi_slll_4
-0000c82e   __mspabi_slll_5
-0000c82a   __mspabi_slll_6
-0000c826   __mspabi_slll_7
-0000c822   __mspabi_slll_8
-0000c81e   __mspabi_slll_9
-0000c87c   __mspabi_srll_1
-0000c858   __mspabi_srll_10
-0000c854   __mspabi_srll_11
-0000c850   __mspabi_srll_12
-0000c84c   __mspabi_srll_13
-0000c848   __mspabi_srll_14
-0000c844   __mspabi_srll_15
-0000c878   __mspabi_srll_2
-0000c874   __mspabi_srll_3
-0000c870   __mspabi_srll_4
-0000c86c   __mspabi_srll_5
-0000c868   __mspabi_srll_6
-0000c864   __mspabi_srll_7
-0000c860   __mspabi_srll_8
-0000c85c   __mspabi_srll_9
+0000cb54   __mspabi_mpyi_f5hw
+0000c89e   __mspabi_slll_1
+0000c87a   __mspabi_slll_10
+0000c876   __mspabi_slll_11
+0000c872   __mspabi_slll_12
+0000c86e   __mspabi_slll_13
+0000c86a   __mspabi_slll_14
+0000c866   __mspabi_slll_15
+0000c89a   __mspabi_slll_2
+0000c896   __mspabi_slll_3
+0000c892   __mspabi_slll_4
+0000c88e   __mspabi_slll_5
+0000c88a   __mspabi_slll_6
+0000c886   __mspabi_slll_7
+0000c882   __mspabi_slll_8
+0000c87e   __mspabi_slll_9
+0000c8dc   __mspabi_srll_1
+0000c8b8   __mspabi_srll_10
+0000c8b4   __mspabi_srll_11
+0000c8b0   __mspabi_srll_12
+0000c8ac   __mspabi_srll_13
+0000c8a8   __mspabi_srll_14
+0000c8a4   __mspabi_srll_15
+0000c8d8   __mspabi_srll_2
+0000c8d4   __mspabi_srll_3
+0000c8d0   __mspabi_srll_4
+0000c8cc   __mspabi_srll_5
+0000c8c8   __mspabi_srll_6
+0000c8c4   __mspabi_srll_7
+0000c8c0   __mspabi_srll_8
+0000c8bc   __mspabi_srll_9
 0000c756   _auto_init
-0000c94c   _c_int00
-0000c94c   _c_int00_noexit
+0000cae0   _c_int00
+0000cae0   _c_int00_noexit
 0000fffe   _reset_vector
 00001f60   _stack
-0000c9fc   _system_pre_init
-0000ca00   abort
+0000cbc0   _system_pre_init
+0000cbc4   abort
 ffffffff   binit
 0000c200   fram_ro_start
 0000c200   fram_rw_start
 0000c400   fram_rx_start
-0000c7c4   getRTCTime
+0000c824   getRTCTime
 00001c11   iCpt
 0000c400   main
-0000c9d4   memcpy
+0000cb92   memcpy
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -1390,6 +1438,7 @@ address    name
 00001c10   CompteurAcquisitionGPS
 00001c11   iCpt
 00001c12   Reveil_Urgent
+00001c13   WDT_STATUS
 00001f60   _stack
 00002000   __STACK_END
 0000c200   fram_ro_start
@@ -1403,59 +1452,71 @@ address    name
 0000c564   FLASH_WRITE_PAGE
 0000c686   FLASH_READ_PAGE
 0000c756   _auto_init
-0000c7c4   getRTCTime
-0000c806   __mspabi_slll_15
-0000c80a   __mspabi_slll_14
-0000c80e   __mspabi_slll_13
-0000c812   __mspabi_slll_12
-0000c816   __mspabi_slll_11
-0000c81a   __mspabi_slll_10
-0000c81e   __mspabi_slll_9
-0000c822   __mspabi_slll_8
-0000c826   __mspabi_slll_7
-0000c82a   __mspabi_slll_6
-0000c82e   __mspabi_slll_5
-0000c832   __mspabi_slll_4
-0000c836   __mspabi_slll_3
-0000c83a   __mspabi_slll_2
-0000c83e   __mspabi_slll_1
-0000c844   __mspabi_srll_15
-0000c848   __mspabi_srll_14
-0000c84c   __mspabi_srll_13
-0000c850   __mspabi_srll_12
-0000c854   __mspabi_srll_11
-0000c858   __mspabi_srll_10
-0000c85c   __mspabi_srll_9
-0000c860   __mspabi_srll_8
-0000c864   __mspabi_srll_7
-0000c868   __mspabi_srll_6
-0000c86c   __mspabi_srll_5
-0000c870   __mspabi_srll_4
-0000c874   __mspabi_srll_3
-0000c878   __mspabi_srll_2
-0000c87c   __mspabi_srll_1
-0000c882   __TI_zero_init
-0000c8ba   RechercheDernierePageStockee
-0000c8ec   Defiler
-0000c912   InitPage
-0000c932   WDT_Enable
-0000c94c   _c_int00
-0000c94c   _c_int00_noexit
-0000c966   FileVide
-0000c97e   EnableReceiveDataRF
-0000c994   InitBC
-0000c9aa   __mspabi_mpyi_f5hw
-0000c9c0   SleepGPS
-0000c9d4   memcpy
-0000c9e6   SleepRF
-0000c9f4   WakeGPS
-0000c9fc   _system_pre_init
-0000ca00   C$$EXIT
-0000ca00   abort
-0000ca04   GetGPSFIX
-0000ca06   Init_HAL
-0000ca08   WDT_Disable
-0000ca0a   WDT_FIN
+0000c7c4   InitIO
+0000c824   getRTCTime
+0000c866   __mspabi_slll_15
+0000c86a   __mspabi_slll_14
+0000c86e   __mspabi_slll_13
+0000c872   __mspabi_slll_12
+0000c876   __mspabi_slll_11
+0000c87a   __mspabi_slll_10
+0000c87e   __mspabi_slll_9
+0000c882   __mspabi_slll_8
+0000c886   __mspabi_slll_7
+0000c88a   __mspabi_slll_6
+0000c88e   __mspabi_slll_5
+0000c892   __mspabi_slll_4
+0000c896   __mspabi_slll_3
+0000c89a   __mspabi_slll_2
+0000c89e   __mspabi_slll_1
+0000c8a4   __mspabi_srll_15
+0000c8a8   __mspabi_srll_14
+0000c8ac   __mspabi_srll_13
+0000c8b0   __mspabi_srll_12
+0000c8b4   __mspabi_srll_11
+0000c8b8   __mspabi_srll_10
+0000c8bc   __mspabi_srll_9
+0000c8c0   __mspabi_srll_8
+0000c8c4   __mspabi_srll_7
+0000c8c8   __mspabi_srll_6
+0000c8cc   __mspabi_srll_5
+0000c8d0   __mspabi_srll_4
+0000c8d4   __mspabi_srll_3
+0000c8d8   __mspabi_srll_2
+0000c8dc   __mspabi_srll_1
+0000c8e2   Init_SPI
+0000c91a   __TI_zero_init
+0000c952   RechercheDernierePageStockee
+0000c984   InitUARTGPS
+0000c9ac   InitUARTRF
+0000c9d4   ADC10_ISR
+0000c9fc   RTC_B_ISR
+0000ca24   Defiler
+0000ca4a   InitClockSystem
+0000ca6e   InitPage
+0000ca8e   USCI_A0_ISR_HOOK
+0000caaa   USCI_A1_ISR_HOOK
+0000cac6   WDT_Enable
+0000cae0   _c_int00
+0000cae0   _c_int00_noexit
+0000cafa   FileVide
+0000cb12   EnableReceiveDataRF
+0000cb28   InitBC
+0000cb3e   Init_HAL
+0000cb54   __mspabi_mpyi_f5hw
+0000cb6a   SleepGPS
+0000cb7e   USCI_B0_ISR
+0000cb92   memcpy
+0000cba4   SleepRF
+0000cbb2   WakeGPS
+0000cbba   WDT_FIN
+0000cbc0   _system_pre_init
+0000cbc4   C$$EXIT
+0000cbc4   abort
+0000cbc8   GetGPSFIX
+0000cbca   WDT_Disable
+0000cbcc   Timer0_A0_ISR
+0000cbce   Timer1_A0_ISR
 0000e000   Page_Courante
 0000e200   Page_Travail
 0000e400   BC_GPS
@@ -1471,4 +1532,4 @@ ffffffff   binit
 UNDEFED    __TI_INITARRAY_Base
 UNDEFED    __TI_INITARRAY_Limit
 
-[647 symbols]
+[660 symbols]

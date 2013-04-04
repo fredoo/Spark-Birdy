@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['sendcharrf',['SendCharRF',['../_h_a_l_8c.html#a80cb21b61d142961a0af2bf5f19c9999',1,'SendCharRF(char c):&#160;HAL.c'],['../_h_a_l_8h.html#a80cb21b61d142961a0af2bf5f19c9999',1,'SendCharRF(char c):&#160;HAL.c']]],
   ['setalarm',['setAlarm',['../_h_a_l_8c.html#a8238d7f021622acd2d2c0b0bea9308cc',1,'setAlarm(ConfLoggeur cfg):&#160;HAL.c'],['../_h_a_l_8h.html#a7ca172e9eb83376fe4c18a08030b4070',1,'setAlarm(ConfLoggeur):&#160;HAL.c']]],
   ['sleepcpu',['SleepCPU',['../_h_a_l_8c.html#a33b754abcc3744a59b336a7af8e6fbeb',1,'SleepCPU():&#160;HAL.c'],['../_h_a_l_8h.html#a33b754abcc3744a59b336a7af8e6fbeb',1,'SleepCPU():&#160;HAL.c']]],
   ['sleepfor',['SleepFor',['../_h_a_l_8c.html#aa82d99257de7ffbc696691c507efd53a',1,'SleepFor(unsigned int Seconds):&#160;HAL.c'],['../_h_a_l_8h.html#aa82d99257de7ffbc696691c507efd53a',1,'SleepFor(unsigned int Seconds):&#160;HAL.c']]],

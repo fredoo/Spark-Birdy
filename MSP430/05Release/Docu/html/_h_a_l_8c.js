@@ -14,6 +14,7 @@ var _h_a_l_8c =
     [ "MajRTC", "_h_a_l_8c.html#a4cf9eb52ac9ef346067509f6cbc24db7", null ],
     [ "ModifUARTRF", "_h_a_l_8c.html#a0c6993ab3291453231d6b95fecb2bc4d", null ],
     [ "readGPSUART", "_h_a_l_8c.html#a81481b371a0a5a6fd7c71efc617499b1", null ],
+    [ "SendCharRF", "_h_a_l_8c.html#a80cb21b61d142961a0af2bf5f19c9999", null ],
     [ "setAlarm", "_h_a_l_8c.html#a8238d7f021622acd2d2c0b0bea9308cc", null ],
     [ "SleepCPU", "_h_a_l_8c.html#a33b754abcc3744a59b336a7af8e6fbeb", null ],
     [ "SleepFor", "_h_a_l_8c.html#aa82d99257de7ffbc696691c507efd53a", null ],
@@ -21,7 +22,6 @@ var _h_a_l_8c =
     [ "SleepRF", "_h_a_l_8c.html#a54cfb1be5f18e65469cc78d6e8278088", null ],
     [ "startRTC", "_h_a_l_8c.html#af0cdd00285879e1eebe28543d21b05d0", null ],
     [ "StatusLedToggle", "_h_a_l_8c.html#af20141cb957e62ccacd0b500626d1be8", null ],
-    [ "TransmitChar", "_h_a_l_8c.html#ad7a08671e434b6f79ad81df5ca069e95", null ],
     [ "TransmitDataGPS", "_h_a_l_8c.html#a40dcb85779d1c196d89eac118944bb13", null ],
     [ "TransmitDataRF", "_h_a_l_8c.html#a8ae343f7840a178aaf4f12d73e7165c3", null ],
     [ "WakeGPS", "_h_a_l_8c.html#a95cad6039025111ca0f30ff61d79e766", null ],
@@ -31,5 +31,6 @@ var _h_a_l_8c =
     [ "WDT_Init", "_h_a_l_8c.html#ab4f9c182772d6d0814d5c7fe608c1e1d", null ],
     [ "pGPSTXTrame", "_h_a_l_8c.html#ae65b2d054d060e80d0af7309b81c73c2", null ],
     [ "pRFTXTrame", "_h_a_l_8c.html#ac995ab69760423c64e98c2e98fb67a73", null ],
-    [ "RFTXTrameLen", "_h_a_l_8c.html#a43b204fcc739d30618b788ebebee134b", null ]
+    [ "RFTXTrameLen", "_h_a_l_8c.html#a43b204fcc739d30618b788ebebee134b", null ],
+    [ "WDT_STATUS", "_h_a_l_8c.html#a1fcdcf8b7983af52a4f528a86ab75de2", null ]
 ];

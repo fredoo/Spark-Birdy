@@ -1,7 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="node2" href="$slld___h_a_l_8c.html#a6473d8c744066eb11f08fb66e9d89396" title="HAL INIT SPI function." alt="" coords="107,5,258,32"/>
-<area shape="rect" id="node3" href="$slld___h_a_l_8c.html#a8979b28f09ff1a313d57dbdbd3d6b130" title="HAL write functions API." alt="" coords="105,56,261,83"/>
-<area shape="rect" id="node4" href="$slld___h_a_l_8c.html#af746ad6c0736faf68a4a987a9362126a" title="INIT_SPI" alt="" coords="147,107,219,133"/>
-<area shape="rect" id="node5" href="$slld___h_a_l_8c.html#a297fc8dbe4bc8fe0d83b108436af3dcc" title="HAL Read Status function." alt="" coords="125,157,240,184"/>
-<area shape="rect" id="node6" href="$slld___h_a_l_8c.html#aa2a9a6898767ccf53d4a71dc9c0a90ee" title="HAL Software reset function." alt="" coords="109,208,256,235"/>
-</map>

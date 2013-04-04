@@ -34,7 +34,7 @@ void EnableReceiveDataRF(); // Interruptions de UART
 void TransmitDataRF(char*);
 void SleepRF();
 void ConfigModeRF();
-void TransmitChar(char c);
+void SendCharRF(char c);
 
 
 /*!_______________Watchdog Timer*/

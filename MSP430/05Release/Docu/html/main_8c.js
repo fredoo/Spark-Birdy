@@ -14,5 +14,6 @@ var main_8c =
     [ "Trame_RMC", "main_8c.html#ad387b1351ae6acb3d837f874cd821cdd", null ],
     [ "Trame_Travail", "main_8c.html#aa576b27a9cf0bbab20ba571f02f13ff7", null ],
     [ "Trame_VTG", "main_8c.html#aad4308f3c4fac79020a20864cad9d65e", null ],
-    [ "VBat", "main_8c.html#a87a5b5db2b770c5096f736e0723188e2", null ]
+    [ "VBat", "main_8c.html#a87a5b5db2b770c5096f736e0723188e2", null ],
+    [ "WDT_STATUS", "main_8c.html#a1fcdcf8b7983af52a4f528a86ab75de2", null ]
 ];
