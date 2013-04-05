@@ -103,7 +103,7 @@ SBYTE TabletoSBYTE(short* Input, unsigned int Taille)
 void MakeSentence()
 { // A revoir... pour exemple uniquement
 // Cherche le premier $ puis rempli un tableau de Sentence NMEA
-
+/*
 	bufferTemp=readGPSUART();
 	// Recherche du premier debut de trame
 	if(bufferTemp == 0x24) //Test for $
@@ -126,7 +126,7 @@ void MakeSentence()
 	if(buf_index<150)
 		buf_index++;
 	else
-		buf_index=0;
+		buf_index=0;*/
 }
 
 

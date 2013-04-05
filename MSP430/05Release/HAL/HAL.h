@@ -27,7 +27,7 @@ void SleepGPS(); 		// Standby GPS
 void EnableReceiveDataGPS(); 	// Interruptions de UART
 void TransmitDataGPS(char*);	// Interface avec UCA0TXBUF
 char readGPSUART();		// Returns UCA0RXBUF
-void GetGPSFIX();		// Turns ON GPS until FIX is acquired
+BOOL GetGPSFIX();		// Turns ON GPS until FIX is acquired
 
 /*!_______________RF */
 void WakeRF();

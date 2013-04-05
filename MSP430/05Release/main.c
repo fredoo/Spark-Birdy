@@ -19,6 +19,7 @@ BYTE Acquisition_OK;
 BYTE CompteurAcquisitionGPS;
 BYTE iCpt;
 BYTE Reveil_Urgent;
+
 BOOL WDT_STATUS;
 
 int main(void)
@@ -80,7 +81,7 @@ int main(void)
 				}while((CompteurAcquisitionGPS <=3) && (Acquisition_OK == FALSE));
 			break;
 			case CommunicationRF:
-				EnableReceiveDataRF();
+				WakeRF();
 				WDT_Enable(30);  // 30s
 				while (FileVide(&BC_RF) &&(! WDT_FIN()));
 

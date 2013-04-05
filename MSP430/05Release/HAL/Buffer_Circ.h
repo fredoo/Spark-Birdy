@@ -13,3 +13,4 @@ int FileVide(BC *bc);
 int FilePleine(BC *bc);
 char Defiler(BC *bc);
 void Enfiler(BC *bc, char c);
+void VideBuffer(BC *bc);
