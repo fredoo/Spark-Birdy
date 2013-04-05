@@ -80,7 +80,7 @@ int main(void)
 				}while((CompteurAcquisitionGPS <=3) && (Acquisition_OK == FALSE));
 			break;
 			case CommunicationRF:
-				EnableReceiveDataRF();
+				WakeRF();
 				WDT_Enable(30);  // 30s
 				while (FileVide(&BC_RF) &&(! WDT_FIN()));
 

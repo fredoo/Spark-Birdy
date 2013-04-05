@@ -37,3 +37,9 @@ void Enfiler(BC *bc, char c)
     bc->corps[bc->Queue]=c;
     bc->Queue=(bc->Queue+1)&(TailleFile-1);
 }
+
+void VideBuffer(BC *bc)
+{
+	while (!FileVide(bc))
+		Defiler(bc);
+}

@@ -1,10 +1,10 @@
 ******************************************************************************
-                  MSP430 Linker PC v4.1.5                      
+                  MSP430 Linker PC v4.1.2                      
 ******************************************************************************
->> Linked Thu Apr 04 01:25:40 2013
+>> Linked Thu Apr 04 07:05:03 2013
 
 OUTPUT FILE NAME:   <05Release.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 0000c94c
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000c932
 
 
 MEMORY CONFIGURATION
@@ -17,7 +17,7 @@ MEMORY CONFIGURATION
   INFOB                 00001800   00000080  00000000  00000080  RWIX
   INFOA                 00001880   00000080  00000000  00000080  RWIX
   RAM                   00001c00   00000400  000000b3  0000034d  RWIX
-  FRAM                  0000c200   00001e00  0000080c  000015f4  RWIX
+  FRAM                  0000c200   00001e00  00000808  000015f8  RWIX
   FRAM_DATA             0000e000   00001f80  000006ca  000018b6  RWIX
   SIGNATURE             0000ff88   00000008  00000000  00000008  RWIX
   INT00                 0000ff90   00000002  00000000  00000002  RWIX
@@ -97,26 +97,25 @@ section   page    origin      length       input sections
 
 .sysmem    0    0000c200    00000000     UNINITIALIZED
 
-.cinit     0    0000c200    00000020     
+.cinit     0    0000c200    00000012     
                   0000c200    00000006     (.cinit..bss.load) [load image, compression = zero_init]
-                  0000c206    00000006     (.cinit..fram_data.load) [load image, compression = zero_init]
-                  0000c20c    00000004     (__TI_handler_table)
-                  0000c210    00000010     (__TI_cinit_table)
+                  0000c206    00000004     (__TI_handler_table)
+                  0000c20a    00000008     (__TI_cinit_table)
 
-.pinit     0    0000c220    00000000     UNINITIALIZED
+.pinit     0    0000c212    00000000     UNINITIALIZED
 
 .init_array 
-*          0    0000c220    00000000     UNINITIALIZED
+*          0    0000c212    00000000     UNINITIALIZED
 
 .mspabi.exidx 
-*          0    0000c220    00000000     UNINITIALIZED
+*          0    0000c212    00000000     UNINITIALIZED
 
 .mspabi.extab 
-*          0    0000c220    00000000     UNINITIALIZED
+*          0    0000c212    00000000     UNINITIALIZED
 
-.const     0    0000c220    00000000     UNINITIALIZED
+.const     0    0000c212    00000000     UNINITIALIZED
 
-.text      0    0000c400    0000060c     
+.text      0    0000c400    00000608     
                   0000c400    00000164     main.obj (.text:main)
                   0000c564    00000122     Flash.obj (.text:FLASH_WRITE_PAGE)
                   0000c686    000000d0     Flash.obj (.text:FLASH_READ_PAGE)
@@ -128,22 +127,22 @@ section   page    origin      length       input sections
                   0000c8ba    00000032     Flash.obj (.text:RechercheDernierePageStockee)
                   0000c8ec    00000026     Buffer_Circ.obj (.text:Defiler)
                   0000c912    00000020     Flash.obj (.text:InitPage)
-                  0000c932    0000001a     HAL.obj (.text:WDT_Enable)
-                  0000c94c    0000001a     rts430x_lc_sd_eabi.lib : boot.obj (.text:_isr:_c_int00_noexit)
-                  0000c966    00000018     Buffer_Circ.obj (.text:FileVide)
-                  0000c97e    00000016     HAL.obj (.text:EnableReceiveDataRF)
-                  0000c994    00000016     Buffer_Circ.obj (.text:InitBC)
-                  0000c9aa    00000016     rts430x_lc_sd_eabi.lib : mult16_f5hw.obj (.text)
-                  0000c9c0    00000014     HAL.obj (.text:SleepGPS)
-                  0000c9d4    00000012     rts430x_lc_sd_eabi.lib : memcpy.obj (.text:memcpy)
-                  0000c9e6    0000000e     HAL.obj (.text:SleepRF)
-                  0000c9f4    00000008     HAL.obj (.text:WakeGPS)
-                  0000c9fc    00000004     rts430x_lc_sd_eabi.lib : pre_init.obj (.text:_system_pre_init)
-                  0000ca00    00000004                            : exit.obj (.text:abort)
-                  0000ca04    00000002     HAL.obj (.text:GetGPSFIX)
-                  0000ca06    00000002     HAL.obj (.text:Init_HAL)
-                  0000ca08    00000002     HAL.obj (.text:WDT_Disable)
-                  0000ca0a    00000002     HAL.obj (.text:WDT_FIN)
+                  0000c932    0000001a     rts430x_lc_sd_eabi.lib : boot.obj (.text:_isr:_c_int00_noexit)
+                  0000c94c    00000018     Buffer_Circ.obj (.text:FileVide)
+                  0000c964    00000018     HAL.obj (.text:WDT_Enable)
+                  0000c97c    00000016     Buffer_Circ.obj (.text:InitBC)
+                  0000c992    00000016     rts430x_lc_sd_eabi.lib : mult16_f5hw.obj (.text)
+                  0000c9a8    00000014     HAL.obj (.text:EnableReceiveDataRF)
+                  0000c9bc    00000014     HAL.obj (.text:SleepGPS)
+                  0000c9d0    00000012     rts430x_lc_sd_eabi.lib : memcpy.obj (.text:memcpy)
+                  0000c9e2    0000000e     HAL.obj (.text:SleepRF)
+                  0000c9f0    00000008     HAL.obj (.text:WakeGPS)
+                  0000c9f8    00000004     rts430x_lc_sd_eabi.lib : pre_init.obj (.text:_system_pre_init)
+                  0000c9fc    00000004                            : exit.obj (.text:abort)
+                  0000ca00    00000002     HAL.obj (.text:GetGPSFIX)
+                  0000ca02    00000002     HAL.obj (.text:Init_HAL)
+                  0000ca04    00000002     HAL.obj (.text:WDT_Disable)
+                  0000ca06    00000002     HAL.obj (.text:WDT_FIN)
 
 .fram_data 
 *          0    0000e000    000006ca     UNINITIALIZED
@@ -155,14 +154,13 @@ section   page    origin      length       input sections
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 0000c210 records: 2, size/record: 8, table size: 16
+__TI_cinit_table @ 0000c20a records: 1, size/record: 8, table size: 8
 	.bss: load addr=0000c200, load size=00000006 bytes, run addr=00001c00, run size=00000013 bytes, compression=zero_init
-	.fram_data: load addr=0000c206, load size=00000006 bytes, run addr=0000e000, run size=000006ca bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 0000c20c records: 1, size/record: 4, table size: 4
+__TI_handler_table @ 0000c206 records: 1, size/record: 4, table size: 4
 	index: 0, handler: __TI_zero_init
 
 
@@ -205,7 +203,7 @@ address    name
 0000e400   BC_GPS
 0000e484   BC_RF
 000004bc   BIN2BCD
-0000ca00   C$$EXIT
+0000c9fc   C$$EXIT
 000008c0   CDCTL0
 000008c1   CDCTL0_H
 000008c0   CDCTL0_L
@@ -303,24 +301,24 @@ address    name
 0000c8ec   Defiler
 0000e6c2   DerniereHeureAcquisitionGPS
 0000e6be   DernierePageStockee
-0000c97e   EnableReceiveDataRF
+0000c9a8   EnableReceiveDataRF
 00001c0e   EtatAEF
 0000c686   FLASH_READ_PAGE
 0000c564   FLASH_WRITE_PAGE
 00000140   FRCTL0
 00000141   FRCTL0_H
 00000140   FRCTL0_L
-0000c966   FileVide
+0000c94c   FileVide
 00000144   GCCTL0
 00000145   GCCTL0_H
 00000144   GCCTL0_L
 00000146   GCCTL1
 00000147   GCCTL1_H
 00000146   GCCTL1_L
-0000ca04   GetGPSFIX
-0000c994   InitBC
+0000ca00   GetGPSFIX
+0000c97c   InitBC
 0000c912   InitPage
-0000ca06   Init_HAL
+0000ca02   Init_HAL
 000004c4   MAC
 000004da   MAC32H
 000004db   MAC32H_H
@@ -579,8 +577,8 @@ address    name
 0000019a   SYSUNIV
 0000019b   SYSUNIV_H
 0000019a   SYSUNIV_L
-0000c9c0   SleepGPS
-0000c9e6   SleepRF
+0000c9bc   SleepGPS
+0000c9e2   SleepRF
 00001c0d   Status
 00000352   TA0CCR0
 00000354   TA0CCR1
@@ -754,16 +752,16 @@ address    name
 0000015c   WDTCTL
 0000015d   WDTCTL_H
 0000015c   WDTCTL_L
-0000ca08   WDT_Disable
-0000c932   WDT_Enable
-0000ca0a   WDT_FIN
-0000c9f4   WakeGPS
+0000ca04   WDT_Disable
+0000c964   WDT_Enable
+0000ca06   WDT_FIN
+0000c9f0   WakeGPS
 00002000   __STACK_END
 000000a0   __STACK_SIZE
-0000c210   __TI_CINIT_Base
-0000c220   __TI_CINIT_Limit
-0000c20c   __TI_Handler_Table_Base
-0000c210   __TI_Handler_Table_Limit
+0000c20a   __TI_CINIT_Base
+0000c212   __TI_CINIT_Limit
+0000c206   __TI_Handler_Table_Base
+0000c20a   __TI_Handler_Table_Limit
 UNDEFED    __TI_INITARRAY_Base
 UNDEFED    __TI_INITARRAY_Limit
 00000001   __TI_args_main
@@ -771,7 +769,7 @@ UNDEFED    __TI_INITARRAY_Limit
 0000c882   __TI_zero_init
 ffffffff   __binit__
 ffffffff   __c_args__
-0000c9aa   __mspabi_mpyi_f5hw
+0000c992   __mspabi_mpyi_f5hw
 0000c83e   __mspabi_slll_1
 0000c81a   __mspabi_slll_10
 0000c816   __mspabi_slll_11
@@ -803,12 +801,12 @@ ffffffff   __c_args__
 0000c860   __mspabi_srll_8
 0000c85c   __mspabi_srll_9
 0000c756   _auto_init
-0000c94c   _c_int00
-0000c94c   _c_int00_noexit
+0000c932   _c_int00
+0000c932   _c_int00_noexit
 0000fffe   _reset_vector
 00001f60   _stack
-0000c9fc   _system_pre_init
-0000ca00   abort
+0000c9f8   _system_pre_init
+0000c9fc   abort
 ffffffff   binit
 0000c200   fram_ro_start
 0000c200   fram_rw_start
@@ -816,7 +814,7 @@ ffffffff   binit
 0000c7c4   getRTCTime
 00001c11   iCpt
 0000c400   main
-0000c9d4   memcpy
+0000c9d0   memcpy
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -1394,10 +1392,10 @@ address    name
 00002000   __STACK_END
 0000c200   fram_ro_start
 0000c200   fram_rw_start
-0000c20c   __TI_Handler_Table_Base
-0000c210   __TI_CINIT_Base
-0000c210   __TI_Handler_Table_Limit
-0000c220   __TI_CINIT_Limit
+0000c206   __TI_Handler_Table_Base
+0000c20a   __TI_CINIT_Base
+0000c20a   __TI_Handler_Table_Limit
+0000c212   __TI_CINIT_Limit
 0000c400   fram_rx_start
 0000c400   main
 0000c564   FLASH_WRITE_PAGE
@@ -1438,24 +1436,24 @@ address    name
 0000c8ba   RechercheDernierePageStockee
 0000c8ec   Defiler
 0000c912   InitPage
-0000c932   WDT_Enable
-0000c94c   _c_int00
-0000c94c   _c_int00_noexit
-0000c966   FileVide
-0000c97e   EnableReceiveDataRF
-0000c994   InitBC
-0000c9aa   __mspabi_mpyi_f5hw
-0000c9c0   SleepGPS
-0000c9d4   memcpy
-0000c9e6   SleepRF
-0000c9f4   WakeGPS
-0000c9fc   _system_pre_init
-0000ca00   C$$EXIT
-0000ca00   abort
-0000ca04   GetGPSFIX
-0000ca06   Init_HAL
-0000ca08   WDT_Disable
-0000ca0a   WDT_FIN
+0000c932   _c_int00
+0000c932   _c_int00_noexit
+0000c94c   FileVide
+0000c964   WDT_Enable
+0000c97c   InitBC
+0000c992   __mspabi_mpyi_f5hw
+0000c9a8   EnableReceiveDataRF
+0000c9bc   SleepGPS
+0000c9d0   memcpy
+0000c9e2   SleepRF
+0000c9f0   WakeGPS
+0000c9f8   _system_pre_init
+0000c9fc   C$$EXIT
+0000c9fc   abort
+0000ca00   GetGPSFIX
+0000ca02   Init_HAL
+0000ca04   WDT_Disable
+0000ca06   WDT_FIN
 0000e000   Page_Courante
 0000e200   Page_Travail
 0000e400   BC_GPS
