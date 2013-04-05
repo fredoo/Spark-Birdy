@@ -100,6 +100,36 @@ SBYTE TabletoSBYTE(short* Input, unsigned int Taille)
 	return output;
 }// Pour Geo uniquement (valeur sur 8 bits signés)
 
+void MakeSentence()
+{ // A revoir... pour exemple uniquement
+// Cherche le premier $ puis rempli un tableau de Sentence NMEA
+
+	bufferTemp=readGPSUART();
+	// Recherche du premier debut de trame
+	if(bufferTemp == 0x24) //Test for $
+		init = true;
+	if(init)
+		buffer[indexLigne][buf_index]= bufferTemp;
+
+	// Remise a la ligne pour chaque trame
+	if(bufferTemp == 0x24) //Test for $
+	{
+		if(indexLigne<4)
+		{
+			indexLigne++;
+			Status = 1; //Fin de trame donc appel de MakeTrame()
+		}
+		else
+			indexLigne=0;		//
+		buf_index=0;			//
+	}
+	if(buf_index<150)
+		buf_index++;
+	else
+		buf_index=0;
+}
+
+
 void ReadSentence(char * Sentence, DataRegister* InputReg) // Cette fonction lit une phrase et remplit la structure GPSRegister en fonction de celle-ci
 {
 	unsigned short Cpt = 0, Counter, k;

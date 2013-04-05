@@ -8,6 +8,7 @@ CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/msp430_4.1.5
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
+"./HAL/Interrupt_Vectors.obj" \
 "./HAL/HAL.obj" \
 "./HAL/GPS.obj" \
 "./HAL/Flash.obj" \
@@ -128,8 +129,8 @@ all: 05Release.out
 # Other Targets
 clean:
 	-$(RM) $(MSP430_EXECUTABLE_OUTPUTS__QUOTED) "05Release.out"
-	-$(RM) "main.pp" "HAL\Buffer_Circ.pp" "HAL\Flash.pp" "HAL\GPS.pp" "HAL\HAL.pp" 
-	-$(RM) "main.obj" "HAL\Buffer_Circ.obj" "HAL\Flash.obj" "HAL\GPS.obj" "HAL\HAL.obj" 
+	-$(RM) "main.pp" "HAL\Buffer_Circ.pp" "HAL\Flash.pp" "HAL\GPS.pp" "HAL\HAL.pp" "HAL\Interrupt_Vectors.pp" 
+	-$(RM) "main.obj" "HAL\Buffer_Circ.obj" "HAL\Flash.obj" "HAL\GPS.obj" "HAL\HAL.obj" "HAL\Interrupt_Vectors.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

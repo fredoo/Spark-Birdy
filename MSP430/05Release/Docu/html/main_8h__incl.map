@@ -1,10 +1,10 @@
 <map id="main.h" name="main.h">
-<area shape="rect" id="node3" href="$_t_y_p_e_d_e_f_8h.html" title="HAL\\TYPEDEF.h" alt="" coords="5,80,128,107"/>
-<area shape="rect" id="node5" href="$_buffer___circ_8h.html" title="HAL\\Buffer_Circ.h" alt="" coords="203,80,328,107"/>
-<area shape="rect" id="node6" href="$_flash__inc_8h.html" title="HAL\\Flash_inc.h" alt="" coords="353,80,471,107"/>
-<area shape="rect" id="node7" href="$_flash_8h.html" title="HAL\\FLash.h" alt="" coords="496,80,595,107"/>
-<area shape="rect" id="node8" href="$_h_a_l_8h.html" title="HAl\\HAL.h" alt="" coords="619,80,701,107"/>
-<area shape="rect" id="node9" href="$_g_p_s_8h.html" title="HAl\\GPS.h" alt="" coords="726,80,812,107"/>
-<area shape="rect" id="node10" href="$_var___f_r_a_m_8h.html" title="HAL\\Var_FRAM.h" alt="" coords="837,80,963,107"/>
-<area shape="rect" id="node11" href="$_interrupt___vectors_8h.html" title="HAL\\Interrupt_Vectors.h" alt="" coords="987,80,1148,107"/>
+<area shape="rect" id="node3" href="$_t_y_p_e_d_e_f_8h.html" title="HAL\\TYPEDEF.h" alt="" coords="108,80,231,107"/>
+<area shape="rect" id="node5" href="$_buffer___circ_8h.html" title="HAL\\Buffer_Circ.h" alt="" coords="255,80,380,107"/>
+<area shape="rect" id="node6" href="$_flash__inc_8h.html" title="HAL\\Flash_inc.h" alt="" coords="405,80,523,107"/>
+<area shape="rect" id="node7" href="$_flash_8h.html" title="HAL\\FLash.h" alt="" coords="548,80,647,107"/>
+<area shape="rect" id="node8" href="$_h_a_l_8h.html" title="HAl\\HAL.h" alt="" coords="671,80,753,107"/>
+<area shape="rect" id="node9" href="$_g_p_s_8h.html" title="HAl\\GPS.h" alt="" coords="778,80,864,107"/>
+<area shape="rect" id="node10" href="$_var___f_r_a_m_8h.html" title="HAL\\Var_FRAM.h" alt="" coords="889,80,1015,107"/>
+<area shape="rect" id="node11" href="$_interrupt___vectors_8h.html" title="HAL\\Interrupt_Vectors.h" alt="" coords="1039,80,1200,107"/>
 </map>

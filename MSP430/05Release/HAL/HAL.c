@@ -6,6 +6,9 @@
 #include <msp430fr5739.h>	// Necessary for the usages of register names
 #include "HAL.h"
 #include "Flash.h"
+#include "Buffer_Circ.h"
+#include "Var_FRAM_EXTERN.h"
+
 extern char*    pRFTXTrame,pGPSTXTrame;	// Pointeur vers la trame à envoyer
 extern char     RFTXTrameLen ;		// Taille de la trame à envoyer
 extern BOOL WDT_STATUS;
@@ -32,7 +35,7 @@ void Init_HAL()
  *	+ Init DCO (Digitally Controlled Oscillator @8MHz)
  *	+ MCLK 		= DCOCLK 	= 8MHz
  *	+ SMCLK	 	= DCOCLK/2	= 4MHz
- *	+ ACLK	 	= VLOCLK/4 = 3000Hz
+ *	+ ACLK	 	= VLOCLK/4 	= 3kHz
  *
  */
 void InitClockSystem()
@@ -118,7 +121,6 @@ void InitIO()
 void StatusLedToggle()
 {
 	P3OUT ^= BIT1;
-
 }
 //_______________________________ GPS PA6H Related Functions
 /*!	\fn InitUartGPS()
@@ -131,7 +133,7 @@ void StatusLedToggle()
  */
 void InitUARTGPS()
 {
-	// Configure UART0 pins
+	// Configure UART0 pins for secondary function
 	P2SEL1 |= BIT0 + BIT1;			//P2.0 - UCA0TXD
 	P2SEL0 &= ~(BIT0 + BIT1);		//P2.1 - UCA0RXD
 	// Configure UART0
@@ -149,14 +151,20 @@ void WakeGPS()
 {
     P2OUT &= ~BIT4;	// Turn VCC GPS ON (PMOS Command is Active LOW)
 }
-void SleepGPS(BOOL* init ) 	// Only STBY Power for memory
+void SleepGPS() 	// Only STBY Power for memory
 {
     P2OUT |= BIT4;			// Turn VCC GPS OFF
-    *init = FALSE;
 }
-void GetGPSFIX()
+BOOL GetGPSFIX()	// Loop forever until first GPS correct positioning
 {
-
+	BOOL FIX=FALSE;
+	WakeGPS();
+	while(!FIX)
+	{
+		// Dépiler le buffer circulaire BC_GPS
+		// Vérifier dans la trame GGA si un FIX a été effectué
+		// Modifier la valeur de BOOL
+	}
 }
 
 void EnableReceiveDataGPS()
@@ -221,8 +229,6 @@ void ModifUARTRF()
 
 void EnableReceiveDataRF()
     {
-    P3OUT |= BIT4;		// Set RF_CFG HIGH for communication & LOW for configuration mode
-    P3OUT &= ~BIT5;		// Set RF_EN LOW for normal mode for data transceiver & set HIGH to sleep
     UCA1IE |= UCRXIE;	 	// enable RX interrupt flag on eUSCA1 / RF
     __enable_interrupt();
     }
@@ -248,6 +254,18 @@ void TransmitDataRF(char* p)
 //    __enable_interrupt();
 //    UCA1TXBUF = *pRFTXTrame;
     }
+void WakeRF()
+{
+    P3OUT |= BIT4;		// Set RF_CFG HIGH for communication & LOW for configuration mode
+    P3OUT &= ~BIT5;		// Set RF_EN LOW for normal mode for data transceiver & set HIGH to sleep
+    EnableReceiveDataRF();
+}
+
+char readRFUART()
+{
+    return UCA1RXBUF;
+}
+
 void SleepRF()
     {
     P3OUT &= ~BIT4;		// Set RF_CFG HIGH for communication & LOW for configuration mode

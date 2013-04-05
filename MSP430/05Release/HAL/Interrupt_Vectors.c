@@ -5,8 +5,12 @@
  *  Created on: 4 avr. 2013
  *      Author: Fredoo
  */
+#include <msp430.h>
+#include "TYPEDEF.h"
+#include "Buffer_Circ.h"
+#include "Var_FRAM_EXTERN.h"
+#include "HAL.h"
 
-#include "msp430.h"
 /*! Timer0 A0 interrupt service routine
  *
  */
@@ -36,7 +40,9 @@ __interrupt void USCI_A0_ISR_HOOK(void)
 	switch(__even_in_range(UCA0IV,USCI_UART_UCTXCPTIFG))
 	{
 	case USCI_NONE:				break;
-	case USCI_UART_UCRXIFG:		break;
+	case USCI_UART_UCRXIFG:
+		Enfiler(&BC_GPS,readGPSUART()); // Enfilé Trame NMEA dans le buffer circulaire
+		break;
 	case USCI_UART_UCSTTIFG:	break;
 	case USCI_UART_UCTXCPTIFG:	break;
 	}
@@ -52,7 +58,9 @@ __interrupt void USCI_A1_ISR_HOOK(void)
 	switch(__even_in_range(UCA1IV,USCI_UART_UCTXCPTIFG))
 	{
 	case USCI_NONE:				break;
-	case USCI_UART_UCRXIFG:		break;
+	case USCI_UART_UCRXIFG:
+		Enfiler(&BC_RF,readRFUART());
+		break;
 	case USCI_UART_UCSTTIFG:	break;
 	case USCI_UART_UCTXCPTIFG: 	break;
 	}

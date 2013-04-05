@@ -30,11 +30,13 @@ char readGPSUART();		// Returns UCA0RXBUF
 void GetGPSFIX();		// Turns ON GPS until FIX is acquired
 
 /*!_______________RF */
+void WakeRF();
+void SleepRF();
 void EnableReceiveDataRF(); // Interruptions de UART
 void TransmitDataRF(char*);
-void SleepRF();
 void ConfigModeRF();
 void SendCharRF(char c);
+char readRFUART();
 
 
 /*!_______________Watchdog Timer*/
